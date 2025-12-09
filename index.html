@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Bank</title>
+  </head>
+  <body>
+    <section id="create">
+      <label
+        >Имя нового пользователя:
+        <input type="text" id="name" />
+      </label>
+      <div class="btnContainer">
+        <button onclick="createNewAccount()">Create New Account</button>
+      </div>
+      <ul id="accountsList"></ul>
+    </section>
+    <section id="change">
+      <label
+        >Номер аккаунта:
+        <input type="text" id="accountNumber" />
+      </label>
+      <label
+        >Сумма для проведения операции:
+        <input type="number" id="amount" />
+      </label>
+      <div class="btnContainer">
+        <button id="withdraw">-</button>
+        <button id="deposit">+</button>
+      </div>
+    </section>
+  </body>
+</html>
